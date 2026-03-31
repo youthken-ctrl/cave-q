@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q. — 2023 Cabernet Sauvignon · Napa Valley</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --black: #080808;
+      --cream: #f2ede4;
+      --gold: #c9a96e;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-bottom: 1px solid rgba(242,237,228,0.08);
+    }
+    .hero-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(140px, 28vw, 260px);
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .hero-sub {
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(242,237,228,0.4);
+      margin-top: 28px;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 120px 40px;
+    }
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(38px, 5vw, 58px);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.95;
+      color: rgba(242,237,228,0.65);
+      margin-bottom: 20px;
+    }
+    .blend {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(242,237,228,0.3);
+      line-height: 2.2;
+      margin-top: 48px;
+    }
+
+    /* ── TASTING ROOM ── */
+    .tasting-room {
+      border-top: 1px solid rgba(242,237,228,0.08);
+      padding: 120px 40px;
+      text-align: center;
+    }
+    .tasting-room .eyebrow,
+    .tasting-room h2 { text-align: center; }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 60px auto 80px;
+      aspect-ratio: 16/9;
+      background: rgba(242,237,228,0.03);
+      border: 1px solid rgba(242,237,228,0.08);
+    }
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ── FORM ── */
+    .form-wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+    .form-wrap h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 30px;
+      font-weight: 300;
+      margin-bottom: 12px;
+    }
+    .form-wrap p {
+      font-size: 13px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .typeform-wrap {
+      width: 100%;
+      height: 520px;
+      border: 1px solid rgba(242,237,228,0.08);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid rgba(242,237,228,0.08);
+      padding: 80px 40px;
+      text-align: center;
+    }
+    footer .f-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 56px;
+      font-weight: 300;
+      margin-bottom: 32px;
+    }
+    footer p {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(242,237,228,0.2);
+      line-height: 2.4;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-logo">Q.</div>
+    <div class="hero-sub">2023 Cabernet Sauvignon &nbsp;&middot;&nbsp; Napa Valley</div>
+  </div>
+
+  <!-- THE WINE -->
+  <div class="section">
+    <div class="eyebrow">The Wine</div>
+    <h2>2023 Cabernet<br>Sauvignon</h2>
+    <p>
+      With aromas of blackberry, caramel and spice, and flavors of mocha, plum and cassis,
+      this 2023 Cabernet Sauvignon is a complex wine from the Napa Valley.
+    </p>
+    <p>
+      Full-bodied with polished tannins and a long finish, delicious now and for the next
+      20 years. A wine to be shared with those that represent the valley floor as well as the hillside.
+    </p>
+    <div class="blend">
+      96.9% Cabernet Sauvignon &nbsp;&middot;&nbsp; 2.1% Petit Verdot<br>
+      0.75% Malbec &nbsp;&middot;&nbsp; 0.25% Cabernet Franc<br>
+      Alc 13.5% by Vol &nbsp;&middot;&nbsp; Napa Valley
+    </div>
+  </div>
+
+  <!-- VIRTUAL TASTING ROOM (hidden until video/form are ready)
+  <div class="tasting-room">
+    <div class="eyebrow">Virtual Tasting Room</div>
+    <h2>Experience the Wine</h2>
+    <div class="video-wrap">
+      <iframe src="https://player.vimeo.com/video/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="form-wrap">
+      <h3>Share Your Experience</h3>
+      <p>We'd love to hear how you enjoyed Q.</p>
+      <iframe class="typeform-wrap" src="https://form.typeform.com/to/YOUR_FORM_ID" frameborder="0"></iframe>
+    </div>
+  </div>
+  -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="f-logo">Q.</div>
+    <p>
+      Produced &amp; Bottled by The Wine Foundry, Napa, CA<br>
+      Contains Sulfites &nbsp;&middot;&nbsp; Alc 13.5% by Vol<br><br>
+      Government Warning: (1) According to the Surgeon General, women should not drink
+      alcoholic beverages during pregnancy because of the risk of birth defects.
+      (2) Consumption of alcoholic beverages impairs your ability to drive a car or
+      operate machinery, and may cause health problems.
+    </p>
+  </footer>
+
+</body>
+</html>
